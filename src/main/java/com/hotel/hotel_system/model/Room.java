@@ -12,13 +12,13 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String roomType;
+    private String roomType;  // Single, Double, Deluxe
 
 
     private double price;
 
     private boolean available;
-
+ //Constructors
     public Room() {
     }
 
@@ -29,7 +29,7 @@ public class Room {
     public void setId(Long id) {
         this.id = id;
     }
-
+//Getters and Setters
     public String getRoomType() {
         return roomType;
     }
