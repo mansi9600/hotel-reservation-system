@@ -1,101 +1,47 @@
-\# Hotel Reservation System
+# Hotel Reservation System
 
-
-
-\## Project Overview
-
-
+## Project Overview
 
 Hotel Reservation System is a Spring Boot and PostgreSQL based application that allows hotel room management through REST APIs.
 
+## Features
 
+- Add Room
+- View All Rooms
+- Update Room Details
+- Delete Room
+- PostgreSQL Database Integration
+- Spring Data JPA
 
-\## Features
+## Technologies Used
 
+- Java
+- Spring Boot
+- PostgreSQL
+- Maven
+- Spring Data JPA
+- Git & GitHub
 
+## API Endpoints
 
-\* Add Room
-
-\* View All Rooms
-
-\* Update Room Details
-
-\* Delete Room
-
-\* PostgreSQL Database Integration
-
-\* Spring Data JPA
-
-
-
-\## Technologies Used
-
-
-
-\* Java
-
-\* Spring Boot
-
-\* PostgreSQL
-
-\* Maven
-
-\* Spring Data JPA
-
-\* Git \& GitHub
-
-
-
-\## API Endpoints
-
-
-
-\### Get All Rooms
-
-
-
+### Get All Rooms
 GET /rooms
 
-
-
-\### Add Room
-
-
-
+### Add Room
 POST /rooms
 
-
-
-\### Update Room
-
-
-
+### Update Room
 PUT /rooms/{id}
 
-
-
-\### Delete Room
-
-
-
+### Delete Room
 DELETE /rooms/{id}
 
-
-
-\## Database
-
-
+## Database
 
 PostgreSQL database is used to store room information.
 
 All assigned GitHub issues have been completed and closed successfully.
 
-
-\## Author
-
-
+## Author
 
 Mansi Gupta
-
-
-
