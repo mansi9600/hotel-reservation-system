@@ -88,6 +88,7 @@ DELETE /rooms/{id}
 
 PostgreSQL database is used to store room information.
 
+All assigned GitHub issues have been completed and closed successfully.
 
 
 \## Author
