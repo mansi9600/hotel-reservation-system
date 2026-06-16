@@ -20,4 +20,16 @@ public class ReservationService {
     public List<Reservation> getAllReservations() {
         return repository.findAll();
     }
+
+    public boolean isRoomAvailable(
+            Long roomId,
+            String checkInDate,
+            String checkOutDate
+    ) {
+        return !repository.existsOverlappingReservation(
+                roomId,
+                checkInDate,
+                checkOutDate
+        );
+    }
 }
