@@ -6,7 +6,8 @@ Frontend: React
 
 Team Members:
 - Mansi Gupta
-- Team Member Name
+- Akash
+- Praveena
 
 Project Status:
 - Repository Created
