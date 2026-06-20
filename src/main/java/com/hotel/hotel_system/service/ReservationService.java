@@ -6,7 +6,7 @@ import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+import com.hotel.hotel_system.model.ReservationStatus;
 import java.util.List;
 
 @Service
@@ -20,6 +20,7 @@ public class ReservationService {
 
     public Reservation saveReservation(Reservation reservation) {
 
+        reservation.setStatus(ReservationStatus.HELD);
         String lockName = "room_lock_" + reservation.getRoom().getId();
         RLock lock = redissonClient.getLock(lockName);
 
