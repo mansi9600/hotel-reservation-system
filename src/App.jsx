@@ -1,7 +1,8 @@
-import Register from "./Register";
+import Dashboard from "./Dashboard";
+import Register from "./Dashboard";
 
 function App() {
-  return <Register />;
+  return <Dashboard />;
 }
 
 export default App;
