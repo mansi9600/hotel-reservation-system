@@ -1,27 +1,18 @@
-import { useState} from "react";
 import "./Dashboard.css";
 
 function Dashboard() {
-  
-
-  
-    const [checkIn, setCheckIn] = useState("");
-    const [checkout,setCheckOut] = useState("");
-  
   return (
     <div className="container">
-      {/*Hero Section*/}
-    
-      <div className="classname='hero'">
+
+      <div className="hero">
         <h1>🏨 Grand Hotel & Resort</h1>
-        <p>Manage rooms, bookings and customers easily.</p>
+        <p>Manage rooms, bookings and customers easily</p>
 
         <div className="buttons">
           <button>View Rooms</button>
           <button>Book Room</button>
         </div>
       </div>
-      {/*Cards Section*/}
 
       <div className="cards">
         <div className="card">
@@ -40,46 +31,21 @@ function Dashboard() {
         </div>
 
         <div className="card">
-          <h3>Weekday Offer</h3>
+          <h3>Weekday Orfer</h3>
           <p>check it out</p>
         </div>
       </div>
-      {/*Booking From Section*/}
 
       <div className="booking">
-      <h2>Book a Room</h2>
-      <label>Check-In Date</label><br/>
-      <Input
-      type="date"
-      value={checkIn}
-      onChange={(e) =>
-        setCheckIn (e.target.value)}/>
-
-        <br/><br/>
-        <label>Check-Out Date</label><br/>
-        <Input
-         type="date"
-      value={checkOut}
-      onChange={(e) =>
-        setCheckOut (e.target.value)}
-        />
-
-        <br/><br/>
-        <button>Book Now</button>
-        </div>
-        {/*Recent Bookinga Section*/}
-      
         <h2>Recent Bookings</h2>
 
         <table>
-          <thead>
+          <tbody>
             <tr>
               <th>Name</th>
               <th>Room</th>
               <th>Status</th>
             </tr>
-            </thead>
-            <tbody>
 
             <tr>
               <td>Akash</td>
@@ -101,8 +67,9 @@ function Dashboard() {
           </tbody>
         </table>
       </div>
+
+    </div>
   );
 }
-
 
 export default Dashboard;
