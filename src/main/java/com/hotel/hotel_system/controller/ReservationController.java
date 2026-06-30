@@ -23,4 +23,16 @@ public class ReservationController {
     public List<Reservation> getAllReservations() {
         return service.getAllReservations();
     }
+    @GetMapping("/availability")
+    public boolean checkAvailability(
+            @RequestParam Long roomId,
+            @RequestParam String checkInDate,
+            @RequestParam String checkOutDate
+    ) {
+        return service.isRoomAvailable(
+                roomId,
+                checkInDate,
+                checkOutDate
+        );
+    }
 }
