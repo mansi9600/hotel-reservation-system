@@ -13,10 +13,18 @@ public class Reservation {
     private String guestName;
     private String checkInDate;
     private String checkOutDate;
-
+    @Enumerated(EnumType.STRING)
+    private ReservationStatus status;
     @ManyToOne
     @JoinColumn(name = "room_id")
     private Room room;
+    public ReservationStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(ReservationStatus status) {
+        this.status = status;
+    }
 
     public Reservation() {
     }
