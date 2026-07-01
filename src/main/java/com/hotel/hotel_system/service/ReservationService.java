@@ -52,4 +52,14 @@ public class ReservationService {
                 checkOutDate
         );
     }
-}
+    public Reservation updateStatus(Long reservationId, ReservationStatus status) {
+
+        Reservation reservation = repository.findById(reservationId)
+                .orElseThrow(() -> new RuntimeException("Reservation not found"));
+
+        reservation.setStatus(status);
+
+        return repository.save(reservation);
+    }
+
+    }
